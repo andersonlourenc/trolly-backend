@@ -4,6 +4,13 @@ import org.jetbrains.exposed.dao.id.UUIDTable
 import org.jetbrains.exposed.sql.javatime.datetime
 import java.time.LocalDateTime
 
+enum class ListType {
+    NORMAL,
+    SPECIAL,
+    RECIPE
+}
+
+
 object ListsTable : UUIDTable("lists") {
     val owner = reference("owner_id", UsersTable)
     val title = varchar("title", 255)

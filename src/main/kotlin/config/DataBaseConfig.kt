@@ -4,6 +4,7 @@ import com.lourenc.models.tables.ListItemsTable
 import com.lourenc.models.tables.ListsTable
 import com.lourenc.models.tables.ProductsTable
 import com.lourenc.models.tables.SharedListsTable
+import com.lourenc.models.tables.SpecialListsTable
 import com.lourenc.models.tables.UsersTable
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
@@ -24,7 +25,8 @@ object DataBaseConfig {
                 ListsTable,
                 SharedListsTable,
                 ProductsTable,
-                ListItemsTable
+                ListItemsTable,
+                SpecialListsTable
             )
         }
     }
