@@ -38,6 +38,8 @@ dependencies {
     testImplementation("io.ktor:ktor-server-test-host")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 
+    implementation("at.favre.lib:bcrypt:0.9.0")
+    implementation("org.mindrot:jbcrypt:0.4")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1")
 

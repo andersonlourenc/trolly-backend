@@ -14,6 +14,7 @@ import io.ktor.server.netty.Netty
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
 import com.lourenc.routes.productRoutes
+import com.lourenc.routes.userRoutes
 import com.lourenc.serialization.UUIDSerializer
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.plugins.contentnegotiation.ContentNegotiation
@@ -77,6 +78,6 @@ fun Application.module() {
         )
     }
 
-    routing { productRoutes() }
+    routing { userRoutes() }
 
 }
