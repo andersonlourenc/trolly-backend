@@ -1,5 +1,6 @@
 package com.lourenc
 
+import com.lourenc.application.module
 import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.server.testing.*
